@@ -30,21 +30,21 @@ const testDirecting = () => {
             () => {
                 modal.remove();
             }
-            , 2000
+            , 3000
         );
     }
 
     directFastTest.addEventListener('click', () => {
-        directing('start-fast-test.html', 'Войдите или зарегистрируйтесь, чтобы пройти быстрый тест!')
+        directing('start-fast-test.html', 'Войдите в аккаунт, чтобы пройти быстрый тест!')
     });
 
     directMarathonTest.addEventListener('click', () => {
-        directing('start-marathon-test.html', 'Войдите или зарегистрируйтесь, чтобы пройти марафон!')
+        directing('start-marathon-test.html', 'Войдите в аккаунт, чтобы пройти марафон!')
     });
 
     directBestResultTable.addEventListener('click', () => {
         if (localStorage.currentUser == 'none'){
-            modalAppearance('Войдите или зарегистрируйтесь, чтобы увидеть таблицу лучших результатов!');
+            modalAppearance('Войдите в аккаунт, чтобы увидеть таблицу лучших результатов!');
         } else{
             window.location.href = 'best-results.html';
         }

@@ -142,7 +142,7 @@
     font-size: 20px;
     color: var(--main-col);
     text-decoration: none;
-    margin-right: 20px;
+    margin-right: 25px;
     cursor: pointer;
 }
 
@@ -1071,6 +1071,40 @@
     background-color: var(--main-col-hover);
 }
 
+/* Страница со статьями */
+
+.articles-page__title{
+    margin-bottom: 25px;
+}
+
+.article{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--soft-blue);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.article__heading{
+    margin-bottom: 15px;
+}
+
+.article__text{
+    margin-bottom: 10px;
+}
+
+.article__text:last-child {
+    margin-bottom: 10px;
+}
+
+.article__date-text{
+    color: var(--gray-col);
+    margin-top: 10px;
+    align-self: flex-end;
+}
+
+
 
 /* -------------------------------------- Медиа запросы ----------------------------------------------- */
 /* ------------- 1620 px и меньше ----------- */
@@ -1290,11 +1324,11 @@
     }
 
     .logo{
-        width: 105px;
+        width: 100px;
     }
     
     .logo__img{
-        width: 105px;
+        width: 100px;
     }
 
     .img{
@@ -1326,6 +1360,7 @@
 
     .head-btn{
         font-size: 16px;
+        margin-right: 15px;
     }
 
     .link-to-main-block{

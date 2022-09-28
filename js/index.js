@@ -17,47 +17,35 @@ import addingTasks from "./modules/addingTasks.js"
 
 let currentPageURL = document.location.href;
 currentPageURL = currentPageURL.split('/');
-currentPageURL = currentPageURL[currentPageURL.length-1];
+currentPageURL = currentPageURL[currentPageURL.length - 1];
 
-if (currentPageURL == 'login.html'){
+checkLocalStorage();
+fillTasksInLS();
+
+logout();
+
+if (currentPageURL == 'login.html') {
     login();
-} else if (currentPageURL == 'registration.html'){
+} else if (currentPageURL == 'registration.html') {
     registration();
-} else if (currentPageURL == 'profile.html'){
+} else if (currentPageURL == 'profile.html') {
     profileGenerating();
-} else if (currentPageURL == 'start-fast-test.html' || currentPageURL == 'start-marathon-test.html'){
-    fillTasksInLS();
-} 
-else if (currentPageURL == 'fast-test.html'){
+} else if (currentPageURL == 'fast-test.html') {
     fastTest();
     stopwatch();
-} else if(currentPageURL == 'marathon-test.html'){
+} else if (currentPageURL == 'marathon-test.html') {
     stopwatch();
     marathonTest();
-} else if (currentPageURL == 'best-results.html'){
-    checkLocalStorage();
+} else if (currentPageURL == 'best-results.html') {
     bestResultTableGenerating();
-} else if(currentPageURL == 'task-redactor.html'){
-    fillTasksInLS();
+} else if (currentPageURL == 'task-redactor.html') {
     generatingTaskRedactor();
     deletingTasks();
     openingModalAddingTask();
     addingTasks();
-// } else if (currentPageURL == 'index.html'){
-//    fillTasksInLS();
-//    changingNavBtns();
-//    checkLocalStorage();
-//    testDirecting();
-//    logout();
-} else {
-    fillTasksInLS();
+} else if (currentPageURL == 'index.html' || currentPageURL == '') {
     changingNavBtns();
-    checkLocalStorage();
     testDirecting();
-//    logout();
+} else if (currentPageURL == 'articles.html') {
+    changingNavBtns();
 }
-
-logout();
-
-
-

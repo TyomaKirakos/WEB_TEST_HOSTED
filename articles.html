@@ -63,12 +63,14 @@
         <div class="header__content container">
             <a href="index.html" class="header__logo logo"><img src="img/Logo.svg" alt="WEB_TEST" class="logo__img"></a>
             <div class="header__head-btns head-btns not-authorized-btns">
+                <a href="articles.html" class="head-btns__articles-btn head-btn">Статьи</a>
                 <a href="login.html" class="head-btns__login-btn head-btn">Вход</a>
-                <a href="registration.html" class="head-btns__register-btn head-btn">Регистрация</a>
+                <!-- <a href="registration.html" class="head-btns__register-btn head-btn">Регистрация</a> -->
             </div>
             <div class="header__head-btns head-btns authorized-btns">
-                <p class="head-btn head-btns__logout-btn logout-btn">Выход</p>
+                <a href="articles.html" class="head-btns__articles-btn head-btn">Статьи</a>
                 <a href="profile.html" class="head-btn head-btns__profile-btn">Профиль</a>
+                <p class="head-btn head-btns__logout-btn logout-btn">Выход</p>
             </div>
         </div>
     </header>
@@ -77,8 +79,22 @@
             <div class="main__link-to-main-block link-to-main-block">
                 <a href="index.html" class="link-to-main-block__link-to-main just-text">← На главную</a>
             </div>
-            <div class="main__articles-block articles-block">
-                <h2 class="articles-lock__title title">Наши статьи</h2>
+            <div class="main__articles-page articles-page">
+                <h2 class="articles-page__title title">Наши статьи и новости</h2>
+                <section class="articles-page__articles-block articles-block">
+                    <article class="articles-block__article article">
+                        <h3 class="article__heading sub-heading">WEB_TEST теперь в общем доступе!</h3>
+                        <p class="article__text just-text">Хочу с радостью сообщить, что проект онлайн-теста по программированию наконец-то <span class="important-text">в общем доступе!</span></p>
+                        <p class="article__text just-text">Всё началось с необходимости придумать идею для курсовой работы 3 курса в колледже. Изначально у меня была идея сделать онлайн-тренажёр по английскому языку, но эта тематика уже была занята. После этого я решился сделать сервис, который поможет проверить свои знания по HTML, CSS и JavaScript.</p>
+                        <p class="article__text just-text">Первым делом я взялся за создание дизайна будущего сервиса онлайн-теста. На дизайн ушло достаточно много времени, т.к. я тот ещё перфекционист. Неоднократно приходилось переделывать некоторые элементы, а иногда и целые страницы. Но дизайн в фигме так и не был доделан до конца.</p>
+                        <p class="article__text just-text">Затем я взялся за верстку сие чуда при помощи HTML и CSS. К моему удивлению, на вёрстку ушло меньше или же столько же времени, сколько на дизайн самого сайта. HTML структура соответствует современным стандартам и методологии БЭМ. Благо HTML-структуру я доделал до конца.</p>
+                        <p class="article__text just-text">После вёрстки страницы я сразу же приступал к самой гламурной части разработки сайта - написанию CSS-стилей. Я в самом начале понимал, что сайт будет выполнен в минималистическом стиле. В качестве основных цветов были выбраны синие оттенки (я думаю, что вы это заметили). Когда основные стили дописывались, я приступал к адаптации страниц под мобильные и планшетные устройства, поэтому вы можете пользоваться полным функционалом с девайса с почти любым разрешением дисплея (до iPhone 5S)</p>
+                        <p class="article__text just-text">Когда внешне сайт был уже готов, настала пора приступать к разработке функциональной части сайта с помощью JavaScript. При разработке сайта я использовал модульный подход (когда программа разбита на множество небольших js-файлов). Во время написания кода не обошлось и без багов, но я старался все их устранять при обнаружении (либо же превращать их в фичи). Сейчас, вроде бы, всё работает.</p>
+                        <p class="article__text just-text">Наконец, когда сайт был готов, я приступил к самой скучной части выполнения курсовой работы - написание отчета. Это настолько скучная часть выполнения курсовой работы, что я об этом даже писать не буду.</p>
+                        <p class="article__text just-text">Спасибо всем! Всех люблю <3</p>
+                        <p class="article__date-text just-text">28.09.2022 20:05</p>
+                    </article>
+                </section>
             </div>
         </div>
     </main>
